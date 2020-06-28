@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../css/Produit.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AboutProduitController">
+   
+   <right>
+      
+   </right>
+   <center>
+      <AnchorPane prefHeight="720.0" prefWidth="1143.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="199.0" prefHeight="720.0" prefWidth="1246.0" styleClass="bg-v2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fx:id="pic_pro" fitHeight="221.0" fitWidth="431.0" layoutX="48.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" styleClass="txt-v3" />
+                  <TextFlow layoutX="548.0" layoutY="82.0" prefHeight="59.0" prefWidth="479.0" styleClass="title-v1" AnchorPane.leftAnchor="548.0" AnchorPane.rightAnchor="116.0">
+                     <children>
+                        <Text fx:id="title_txt" fill="#2f2f2f" strokeType="OUTSIDE" strokeWidth="0.0" text="INFOS SUR LE PRODUIT ----------" />
+                     </children>
+                  </TextFlow>
+                  <TextFlow layoutX="115.0" layoutY="361.0" prefHeight="314.0" prefWidth="651.0" styleClass="txt-v3" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="449.0" AnchorPane.topAnchor="361.0">
+                     <children>
+                        <Text fx:id="desc_txt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="descrip nn n n   j j j j j jjj j jjj n n nn n nn  n nn tion ici" />
+                     </children>
+                  </TextFlow>
+                  <TextFlow layoutX="47.0" layoutY="300.0" prefHeight="36.0" prefWidth="654.0" styleClass="title-v1" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="449.0" AnchorPane.topAnchor="300.0">
+                     <children>
+                        <Text fill="#f20404" strokeType="OUTSIDE" strokeWidth="0.0" text="Description de produit" />
+                     </children>
+                  </TextFlow>
+                  <TextFlow layoutX="706.0" layoutY="425.0" prefHeight="59.0" prefWidth="428.0" styleClass="txt-v1" AnchorPane.bottomAnchor="236.0" AnchorPane.rightAnchor="6.0">
+                     <children>
+                        <Text fx:id="nom_txt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="NOM DE PRODUIT : -----------" />
+                     </children>
+                  </TextFlow>
+                  <TextFlow layoutX="705.0" layoutY="518.0" prefHeight="59.0" prefWidth="430.0" styleClass="txt-v1" AnchorPane.bottomAnchor="143.0" AnchorPane.rightAnchor="5.0">
+                     <children>
+                        <Text fx:id="type_txt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="TYPE DE PRO : -----------" />
+                     </children>
+                  </TextFlow>
+                  <TextFlow layoutX="705.0" layoutY="330.0" prefHeight="59.0" prefWidth="430.0" styleClass="txt-v1" AnchorPane.bottomAnchor="331.0" AnchorPane.rightAnchor="5.0">
+                     <children>
+                        <Text fx:id="prix_txt" fill="#fcfcfc" strokeType="OUTSIDE" strokeWidth="0.0" text="PRIX DE PRODUIT : -----------" />
+                     </children>
+                  </TextFlow>
+                  <TextFlow layoutX="705.0" layoutY="607.0" prefHeight="59.0" prefWidth="430.0" styleClass="txt-v1" AnchorPane.bottomAnchor="54.0" AnchorPane.rightAnchor="5.0">
+                     <children>
+                        <Text fx:id="qte_txt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="QUANTITE STOCK : -----------" />
+                     </children>
+                  </TextFlow>
+               </children></AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+   <left>
+      <VBox prefHeight="720.0" prefWidth="140.0" style="-fx-background-color: #555;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="794.0" prefWidth="140.0">
+               <children>
+                  <Button fx:id="back" layoutX="25.0" layoutY="671.0" mnemonicParsing="false" onAction="#back_fnc" styleClass="field-v1" text="RETOUR" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="24.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="del_btn" layoutX="14.0" layoutY="161.0" mnemonicParsing="false" onAction="#del_fnc" styleClass="field-v1" text="SUPPRIMER">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="update_btn" layoutX="14.0" layoutY="57.0" mnemonicParsing="false" onAction="#GoToUpdate" prefHeight="35.0" prefWidth="113.0" styleClass="field-v1" text="MODIFIER">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children></VBox>
+   </left>
+</BorderPane>
